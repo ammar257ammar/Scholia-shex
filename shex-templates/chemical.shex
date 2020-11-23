@@ -1,0 +1,73 @@
+PREFIX xsd:    <http://www.w3.org/2001/XMLSchema#>
+PREFIX :    <http://bigcat.unimaas.nl/>
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd:    <http://www.wikidata.org/entity/>
+PREFIX wdt:    <http://www.wikidata.org/prop/direct/>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
+
+start=@:chemical
+
+:chemical {
+	wdt:P231 LITERAL *; 
+	wdt:P232 LITERAL *; 
+	wdt:P233 LITERAL *; 
+	wdt:P234 LITERAL *; 
+	wdt:P235 LITERAL *; 
+	wdt:P267 LITERAL *; 
+	wdt:P267 LITERAL *; 
+	wdt:P267 LITERAL *; 
+	wdt:P592 LITERAL *; 
+	wdt:P595 LITERAL *; 
+	wdt:P652 LITERAL *; 
+	wdt:P657 LITERAL *; 
+	wdt:P661 LITERAL *; 
+	wdt:P662 LITERAL *; 
+	wdt:P665 LITERAL *; 
+	wdt:P665 LITERAL *; 
+	wdt:P683 LITERAL *; 
+	wdt:P715 LITERAL *; 
+	wdt:P715 LITERAL *; 
+	wdt:P1578 LITERAL *; 
+	wdt:P1579 LITERAL *; 
+	wdt:P1931 LITERAL *; 
+	wdt:P2057 LITERAL *; 
+	wdt:P2115 LITERAL *; 
+	wdt:P2566 LITERAL *; 
+	wdt:P2840 LITERAL *; 
+	wdt:P2840 LITERAL *; 
+	wdt:P2840 LITERAL *; 
+	wdt:P3117 LITERAL *; 
+	wdt:P3550 LITERAL *; 
+	wdt:P4168 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *; 
+	wdt:P6689 LITERAL *;
+	wdt:P6689 LITERAL *;
+	wdt:P2017 LITERAL *;
+}

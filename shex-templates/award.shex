@@ -1,0 +1,36 @@
+PREFIX xsd:    <http://www.w3.org/2001/XMLSchema#>
+PREFIX :    <http://bigcat.unimaas.nl/>
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd:    <http://www.wikidata.org/entity/>
+PREFIX wdt:    <http://www.wikidata.org/prop/direct/>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
+PREFIX ps: <http://www.wikidata.org/prop/statement/>
+
+start=@:recepient
+
+:recepient{
+	p:P166 @:award_statement +;
+	wdt:P166 [ wd:Q35637 ];
+	wdt:P166 IRI +;
+	wdt:P21 IRI *;
+	wdt:P18 . *;
+	wdt:~ @:location +;
+}
+
+:award_statement{
+	ps:P166 [ wd:Q35637 ];
+	pq:P585 rdf:dateTime OR xsd:dateTime *;
+	| pq:P580 rdf:dateTime OR xsd:dateTime *;
+}
+
+:publication {
+	wdt:P50 @:recepient +;
+	wdt:P577 rdf:dateTime OR xsd:dateTime *;
+	wdt:P921 IRI *;
+}
+
+:location{
+	wdt:P625 . +;
+}

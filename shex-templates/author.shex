@@ -1,0 +1,70 @@
+PREFIX xsd:    <http://www.w3.org/2001/XMLSchema#>
+PREFIX :    <http://bigcat.unimaas.nl/>
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd:    <http://www.wikidata.org/entity/>
+PREFIX wdt:    <http://www.wikidata.org/prop/direct/>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
+
+start=@:publication
+
+:publication {
+	wdt:P50 @:author +;
+	p:P2093 @:author_statement *;
+	wdt:P921 @:theme *;
+	wdt:P31 IRI +; 
+	wdt:P577 rdf:dateTime OR xsd:dateTime *;
+	wdt:P1104 rdf:langString OR xsd:string OR xsd:decimal * ;
+	wdt:P1433 @:venue *; 	
+	rdfs:label rdf:langString OR xsd:string *;
+}
+
+:author_statement{
+	wdt:P50 @:author *;
+	pq:P1545 rdf:langString OR xsd:string OR xsd:decimal *;
+}
+
+:author{
+	rdfs:label rdf:langString OR xsd:string *; 
+	wdt:P496 rdf:langString OR xsd:string *;
+	wdt:P1344 @:event *; 
+	^wdt:P710 @:event *; 
+	^wdt:P98 @:proceeding_from *;	
+	^wdt:P50 @:published_in *;	
+	wdt:P101 @:topic *;
+}
+
+:venue{
+	wdt:P921 @:topic *;
+	rdfs:label rdf:langString OR xsd:string *;
+	wdt:P1813 rdf:langString OR xsd:string *;
+}
+
+:topic{
+	rdfs:label rdf:langString OR xsd:string *; 
+}
+
+:theme{
+	rdfs:label rdf:langString OR xsd:string *; 
+}
+
+:citing_work{
+	wdt:P2860 @:publication *;
+	wdt:P50 @:author *;
+}
+
+:event{
+	wdt:P823 @:author *;
+	| wdt:P664 @:author *;
+	| wdt:P5804 @:author *;
+	| wdt:P5804 @:author *;
+}
+
+:published_in{
+	wdt:P1433 @:proceeding_from *;
+}
+
+:proceeding_from{
+	wdt:P4745 @:event *;
+}
